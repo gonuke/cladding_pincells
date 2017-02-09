@@ -15,4 +15,4 @@ export DATAPATH=/home/adavis23/xs_data
 
 export EXECUTABLE=/home/adavis23/mcnp/mcnp5.mpi
 
-mpirun -np 40 ${EXECUTABLE} i=triangle.inp
+mpirun -np 40 ${EXECUTABLE} i=triangle.inp n=$1
