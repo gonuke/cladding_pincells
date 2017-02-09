@@ -1,0 +1,9 @@
+out*
+runtp*
+srct*
+*_r
+*_o
+*_s
+slurm*.out
+slurm*.err
+
