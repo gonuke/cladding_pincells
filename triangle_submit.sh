@@ -9,4 +9,10 @@
 
 #Now list your executable command (or a string of them). Example:
 module load compile/gcc mpi/gcc/openmpi-1.6.4
-mpirun -np 40 /home/ppwilson/dagmc/bin/mcnp5.mpi i=triangle.inp
+
+export LD_LIBRARY_PATH=/home/adavis23/moab/lib:$LD_LIBRARY_PATH
+export DATAPATH=/home/adavis23/xs_data
+
+export EXECUTABLE=/home/adavis23/mcnp/mcnp5.mpi
+
+mpirun -np 40 ${EXECUTABLE} i=triangle.inp
